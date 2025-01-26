@@ -1,7 +1,5 @@
 import { Component } from '@angular/core';
 import { ButtonModule } from 'primeng/button';
-import { InputGroup } from 'primeng/inputgroup';
-import { InputGroupAddon } from 'primeng/inputgroupaddon';
 import { FormControl, FormsModule, ReactiveFormsModule, Validators } from '@angular/forms';
 import { InputText } from 'primeng/inputtext';
 import { Card } from 'primeng/card';
@@ -12,7 +10,7 @@ import { FloatLabel } from 'primeng/floatlabel';
   templateUrl: './login-page.component.html',
   styleUrl: './login-page.component.scss',
   standalone: true,
-  imports: [ButtonModule, InputGroup, InputGroupAddon, FormsModule, InputText, ReactiveFormsModule, Card, FloatLabel]
+  imports: [ButtonModule, FormsModule, InputText, ReactiveFormsModule, Card, FloatLabel]
 })
 export class LoginPageComponent {
 
