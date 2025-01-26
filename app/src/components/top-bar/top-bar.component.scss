@@ -1,0 +1,10 @@
+@import "../../styles/utility/variables";
+@import "../../styles/utility/grid";
+@import "../../styles/utility/gutters";
+@import "../../styles/utility/size";
+
+.c-top-bar-wrapper {
+  @media(max-width: $mobile-width) {
+    display: none;
+  }
+}

@@ -1,0 +1,101 @@
+<div class="c-login-wrapper">
+
+  <h1>Sell your gear with us</h1>
+
+  <p-card class="c-login-card">
+    <div class="o-grid">
+      <div class="o-grid__col o-grid__col--half u-p-3">
+
+        <div class="text-center">
+          <p>Create a free account or sign in to get started</p>
+        </div>
+
+        <p-floatlabel variant="in" class="u-mb-2 w-100">
+          <input pInputText id="username_field" [formControl]="username" autocomplete="off" class="w-100"/>
+          <label for="username_field">Username</label>
+        </p-floatlabel>
+
+        <p-floatlabel variant="in" class="u-mb-2 w-100">
+          <input pInputText id="password_field" [formControl]="password" autocomplete="off" type="password" class="w-100"/>
+          <label for="password_field">Password</label>
+        </p-floatlabel>
+
+        <p-button class="c-log-in-button w-100">LOGIN</p-button>
+
+        <div class="text-center c-line-through u-mt-4 u-mb-4">
+          <div class="c-line-through__text">OR</div>
+        </div>
+
+        <p-button severity="secondary" class="c-log-in-button w-100 u-mb-1">CREATE ACCOUNT</p-button>
+        <p-button severity="secondary" class="c-log-in-button w-100 u-mb-1">
+          <i class="pi pi-google"></i>
+          SIGN UP WITH GOOGLE
+        </p-button>
+        <p-button severity="secondary" class="c-log-in-button w-100 u-mb-1">
+          <i class="pi pi-facebook"></i>
+          SIGN UP WITH FACEBOOK
+        </p-button>
+
+        <div class="c-login-card-forgotten-password text-center u-mt-3">
+          <p class="u-m-0">Having trouble signing in? <a href="#">Reset your password here.</a></p>
+          <p class="u-mt-3"><a href="#">Terms &amp; Conditions</a></p>
+          <p class="u-mt-3"><a href="#">Privacy Policy</a></p>
+        </div>
+      </div>
+      <div class="o-grid__col o-grid__col--half u-p-3">
+
+        <div class="o-grid u-mb-3">
+          <div class="o-grid__col o-grid__col--fixed u-mr-2">
+            <i class="pi pi-user" style="font-size:3rem"></i>
+          </div>
+          <div class="o-grid__col">
+            1. Sign up
+            <p style="margin-left:18px;">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+          </div>
+        </div>
+
+        <div class="o-grid u-mb-3">
+          <div class="o-grid__col o-grid__col--fixed u-mr-2">
+            <i class="pi pi-list" style="font-size:3rem"></i>
+          </div>
+          <div class="o-grid__col">
+            2. List Products
+            <p style="margin-left:18px;">Architecto blanditiis distinctio doloremque ducimus earum eos et expedita explicabo laboriosam.</p>
+          </div>
+        </div>
+
+        <div class="o-grid u-mb-3">
+          <div class="o-grid__col o-grid__col--fixed u-mr-2">
+            <i class="pi pi-truck" style="font-size:3rem"></i>
+          </div>
+          <div class="o-grid__col">
+            3. Hold or Ship in Advance
+            <p style="margin-left:18px;">Libero minus mollitia, neque nihil possimus quia quisquam quo similique soluta.</p>
+          </div>
+        </div>
+
+        <div class="o-grid u-mb-3">
+          <div class="o-grid__col o-grid__col--fixed u-mr-2">
+            <i class="pi pi-list-check" style="font-size:3rem"></i>
+          </div>
+          <div class="o-grid__col">
+            4. Items Sold
+            <p style="margin-left:18px;">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+          </div>
+        </div>
+
+        <div class="o-grid">
+          <div class="o-grid__col o-grid__col--fixed u-mr-2">
+            <i class="pi pi-dollar" style="font-size:3rem"></i>
+          </div>
+          <div class="o-grid__col">
+            5. Get Paid
+            <p style="margin-left:18px;">Architecto blanditiis distinctio doloremque ducimus earum eos et expedita explicabo laboriosam.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </p-card>
+
+</div>
