@@ -1,0 +1,50 @@
+@import "../../styles/utility/variables";
+@import "../../styles/utility/grid";
+@import "../../styles/utility/gutters";
+@import "../../styles/utility/size";
+
+.c-dashboard-wrapper {
+  margin-left: 10px;
+
+
+  @media(max-width: $mobile-width) {
+    margin-left: 0;
+  }
+}
+
+.main-logo-wrapper {
+  img {
+    border-radius: 50%;
+    margin: 15px;
+  }
+}
+
+.main-logo-intro {
+  color: var(--p-gray-500);
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  letter-spacing: 1px;
+}
+
+.main-logo-name {
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+:host ::ng-deep .p-menu {
+  height: calc(100vh - 16px);
+  width: 300px;
+}
+
+.dashboard-stat-wrapper {
+  margin-right: 15px;
+
+  &--last {
+    margin-right: 0;
+  }
+
+
+  @media(max-width: $mobile-width) {
+    margin-right: 0;
+  }
+}

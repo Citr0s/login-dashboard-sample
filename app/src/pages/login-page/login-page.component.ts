@@ -4,13 +4,15 @@ import { FormControl, FormsModule, ReactiveFormsModule, Validators } from '@angu
 import { InputText } from 'primeng/inputtext';
 import { Card } from 'primeng/card';
 import { FloatLabel } from 'primeng/floatlabel';
+import { RouterLink } from '@angular/router';
+import { TopBarComponent } from '../../components/top-bar/top-bar.component';
 
 @Component({
   selector: 'login-page',
   templateUrl: './login-page.component.html',
   styleUrl: './login-page.component.scss',
   standalone: true,
-  imports: [ButtonModule, FormsModule, InputText, ReactiveFormsModule, Card, FloatLabel]
+  imports: [ButtonModule, FormsModule, InputText, ReactiveFormsModule, Card, FloatLabel, RouterLink, TopBarComponent]
 })
 export class LoginPageComponent {
 

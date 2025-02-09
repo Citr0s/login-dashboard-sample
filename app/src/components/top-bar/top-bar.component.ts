@@ -19,9 +19,7 @@ import { InputIcon } from 'primeng/inputicon';
   imports: [
     Toolbar,
     Button,
-    IconField,
-    SplitButton,
-    InputIcon
+    IconField
   ]
 })
 export class TopBarComponent {

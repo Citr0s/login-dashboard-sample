@@ -1,3 +1,5 @@
+<top-bar></top-bar>
+
 <div class="c-login-wrapper">
 
   <h1>Sell your gear with us</h1>
@@ -20,7 +22,7 @@
           <label for="password_field">Password</label>
         </p-floatlabel>
 
-        <p-button class="c-log-in-button w-100">LOGIN</p-button>
+        <p-button class="c-log-in-button w-100" [routerLink]="['/', 'dashboard']">LOGIN</p-button>
 
         <div class="text-center c-line-through u-mt-4 u-mb-4">
           <div class="c-line-through__text">OR</div>

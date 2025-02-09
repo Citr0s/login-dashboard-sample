@@ -1,0 +1,108 @@
+<div class="o-grid">
+  <div class="o-grid__col o-grid__col--fixed">
+    <p-menu [model]="items" class="flex justify-center">
+      <ng-template #start>
+        <div class="text-center">
+          <div class="main-logo-wrapper">
+            <img src="https://placehold.co/100x100" alt="main logo">
+            <div class="main-logo-intro">Welcome Back</div>
+            <div class="main-logo-name">Lorem Ipsum</div>
+          </div>
+        </div>
+      </ng-template>
+      <ng-template #submenuheader let-item>
+        <span class="text-primary font-bold">{{ item.label }}</span>
+      </ng-template>
+      <ng-template #item let-item>
+        <a pRipple class="flex items-center p-menu-item-link" [routerLink]="item.url">
+          <span [class]="item.icon"></span>
+          <span class="ml-2">{{ item.label }}</span>
+          <p-badge *ngIf="item.badge" class="ml-auto" [value]="item.badge"/>
+        </a>
+      </ng-template>
+    </p-menu>
+  </div>
+  <div class="o-grid__col">
+    <div class="c-dashboard-wrapper">
+      <p-card>
+        <h1>Dashboard</h1>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore sed consequuntur error repudiandae numquam deserunt
+          quisquam repellat libero asperiores earum nam nobis, culpa ratione quam perferendis esse, cupiditate neque quas!
+        </p>
+
+        <div class="o-grid">
+          <div class="o-grid__col">
+            <div class="dashboard-stat-wrapper">
+              <p-panel header="Total Orders">
+                <div class="o-grid">
+                  <div class="o-grid__col">
+                    50
+                  </div>
+                  <div class="o-grid__col">
+                    <div class="text-right">
+                      <i class="pi pi-shopping-cart"></i>
+                    </div>
+                  </div>
+                </div>
+              </p-panel>
+            </div>
+          </div>
+          <div class="o-grid__col">
+            <div class="dashboard-stat-wrapper">
+              <p-panel header="Total Revenue">
+                <div class="o-grid">
+                  <div class="o-grid__col">
+                    £550
+                  </div>
+                  <div class="o-grid__col">
+                    <div class="text-right">
+                      <i class="pi pi-shopping-bag"></i>
+                    </div>
+                  </div>
+                </div>
+              </p-panel>
+            </div>
+          </div>
+          <div class="o-grid__col">
+            <div class="dashboard-stat-wrapper">
+              <p-panel header="Total Products">
+                <div class="o-grid">
+                  <div class="o-grid__col">
+                    3,250
+                  </div>
+                  <div class="o-grid__col">
+                    <div class="text-right">
+                      <i class="pi pi-shop"></i>
+                    </div>
+                  </div>
+                </div>
+              </p-panel>
+            </div>
+          </div>
+          <div class="o-grid__col">
+            <div class="dashboard-stat-wrapper dashboard-stat-wrapper--last">
+              <p-panel header="Total Profit">
+                <div class="o-grid">
+                  <div class="o-grid__col">
+                    £250
+                  </div>
+                  <div class="o-grid__col">
+                    <div class="text-right">
+                      <i class="pi pi-chart-bar"></i>
+                    </div>
+                  </div>
+                </div>
+              </p-panel>
+            </div>
+          </div>
+        </div>
+
+        <div class="card u-mt-3">
+          <p-chart type="line" [data]="data" [options]="options" class="h-[30rem]"/>
+        </div>
+
+      </p-card>
+    </div>
+  </div>
+</div>
