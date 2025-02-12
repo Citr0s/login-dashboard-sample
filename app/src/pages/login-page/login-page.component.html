@@ -1,112 +1,23 @@
-<top-bar></top-bar>
-
-<div class="c-login-wrapper">
-
-  <h1>Sell your gear with us</h1>
-
-  <p-card class="c-login-card">
-    <div class="o-grid">
-      <div class="o-grid__col o-grid__col--half u-p-3">
-
-        <div class="text-center">
-          <p>Create a free account or sign in to get started</p>
-        </div>
-
-        <p-floatlabel variant="in" class="u-mb-2 w-100">
-          <input pInputText id="username_field" [formControl]="username" autocomplete="off" class="w-100"/>
-          <label for="username_field">Username</label>
-        </p-floatlabel>
-
-        <p-floatlabel variant="in" class="u-mb-2 w-100">
-          <input pInputText id="password_field" [formControl]="password" autocomplete="off" type="password" class="w-100"/>
-          <label for="password_field">Password</label>
-        </p-floatlabel>
-
-        <p-button class="c-log-in-button w-100" [routerLink]="['/', 'dashboard']">LOGIN</p-button>
-
-        <div class="text-center c-line-through u-mt-4 u-mb-4">
-          <div class="c-line-through__text">OR</div>
-        </div>
-
-        <p-button severity="secondary" class="c-log-in-button w-100 u-mb-1">CREATE ACCOUNT</p-button>
-        <p-button severity="secondary" class="c-log-in-button w-100 u-mb-1">
-          <i class="pi pi-google"></i>
-          SIGN UP WITH GOOGLE
-        </p-button>
-        <p-button severity="secondary" class="c-log-in-button w-100 u-mb-1">
-          <i class="pi pi-facebook"></i>
-          SIGN UP WITH FACEBOOK
-        </p-button>
-
-        <div class="c-login-card-forgotten-password text-center u-mt-3">
-          <p class="u-m-0">Having trouble signing in? <a href="#">Reset your password here.</a></p>
-          <p class="u-mt-3"><a href="#">Terms &amp; Conditions</a></p>
-          <p class="u-mt-3"><a href="#">Privacy Policy</a></p>
-        </div>
-      </div>
-
-      <div class="o-grid__col o-grid__col--half u-p-3">
-
-        <div class="o-grid c-login-step">
-          <div class="o-grid__col o-grid__col--fixed">
-            <i class="pi pi-user" style="font-size:3rem"></i>
-          </div>
-          <div class="o-grid__col">
-            1. Sign up
-            <p style="margin-left:18px;">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-          </div>
-        </div>
-
-        <div class="o-grid c-login-step">
-          <div class="o-grid__col o-grid__col--fixed">
-            <i class="pi pi-list" style="font-size:3rem"></i>
-          </div>
-          <div class="o-grid__col">
-            2. List Products
-            <p style="margin-left:18px;">Architecto blanditiis distinctio doloremque ducimus earum eos et expedita explicabo laboriosam.</p>
-          </div>
-        </div>
-
-        <div class="o-grid c-login-step">
-          <div class="o-grid__col o-grid__col--fixed">
-            <i class="pi pi-truck" style="font-size:3rem"></i>
-          </div>
-          <div class="o-grid__col">
-            3. Hold or Ship in Advance
-            <p style="margin-left:18px;">Libero minus mollitia, neque nihil possimus quia quisquam quo similique soluta.</p>
-          </div>
-        </div>
-
-        <div class="o-grid c-login-step">
-          <div class="o-grid__col o-grid__col--fixed">
-            <i class="pi pi-list-check" style="font-size:3rem"></i>
-          </div>
-          <div class="o-grid__col">
-            4. Items Sold
-            <p style="margin-left:18px;">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-          </div>
-        </div>
-
-        <div class="o-grid c-login-step">
-          <div class="o-grid__col o-grid__col--fixed">
-            <i class="pi pi-dollar" style="font-size:3rem"></i>
-          </div>
-          <div class="o-grid__col">
-            5. Get Paid
-            <p style="margin-left:18px;">Architecto blanditiis distinctio doloremque ducimus earum eos et expedita explicabo laboriosam.</p>
-          </div>
-        </div>
-
-      </div>
-
+<div class="container relative flex h-[100vh] flex-col items-center justify-center md:grid md:h-[100vh] lg:max-w-none lg:grid-cols-2 lg:px-0">
+  <a hlmbtn="" variant="ghost" href="/examples/authentication"
+     class="absolute right-4 top-4 md:right-8 md:top-8 disabled:opacity-50 disabled:pointer-events-none focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-ring font-medium h-10 hover:bg-accent hover:text-accent-foreground inline-flex items-center justify-center px-4 py-2 ring-offset-background rounded-md text-sm transition-colors">
+    Login
+  </a>
+  <div class="bg-muted relative hidden h-full flex-col p-10 text-white lg:flex dark:border-r-zinc-800">
+    <div class="absolute inset-0 bg-zinc-900 hero-splash"></div>
+    <div class="relative z-20 flex items-center text-lg font-medium">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mr-2 h-6 w-6">
+        <path d="M15 6v12a3 3 0 1 0 3-3H6a3 3 0 1 0 3 3V6a3 3 0 1 0-3 3h12a3 3 0 1 0-3-3"></path>
+      </svg>
+      Acme Inc
     </div>
-  </p-card>
-
-  <div class="background-videos">
-    <video playsinline autoplay muted loop id="video">
-      <source src="home-vid.mp4" type="video/mp4">
-    </video>
-    <div class="blackout"></div>
+    <div class="relative z-20 mt-auto">
+      <blockquote class="space-y-2"><p class="text-lg"> “This library has saved me countless hours of work and helped me deliver stunning designs to my clients faster than ever before.” </p>
+        <footer class="text-sm">Sofia Davis</footer>
+      </blockquote>
+    </div>
   </div>
-
+  <div class="lg:p-8">
+    <login-form class="block"></login-form>
+  </div>
 </div>

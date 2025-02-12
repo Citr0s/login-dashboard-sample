@@ -1,22 +1,12 @@
 import { Component } from '@angular/core';
-import { ButtonModule } from 'primeng/button';
-import { FormControl, FormsModule, ReactiveFormsModule, Validators } from '@angular/forms';
-import { InputText } from 'primeng/inputtext';
-import { Card } from 'primeng/card';
-import { FloatLabel } from 'primeng/floatlabel';
-import { RouterLink } from '@angular/router';
-import { TopBarComponent } from '../../components/top-bar/top-bar.component';
+import { LoginFormComponent } from './components/login-form/login-form.component';
 
 @Component({
   selector: 'login-page',
-  templateUrl: './login-page.component.html',
-  styleUrl: './login-page.component.scss',
+  imports: [LoginFormComponent],
+  templateUrl: 'login-page.component.html',
+  styleUrl: 'login-page.component.scss',
   standalone: true,
-  imports: [ButtonModule, FormsModule, InputText, ReactiveFormsModule, Card, FloatLabel, RouterLink, TopBarComponent]
 })
-export class LoginPageComponent {
-
-  public username: FormControl = new FormControl('', [Validators.required, Validators.min(3)]);
-  public password: FormControl = new FormControl('', [Validators.required, Validators.min(3)]);
-
+export default class LoginPageComponent {
 }
